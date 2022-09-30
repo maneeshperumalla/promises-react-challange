@@ -1,0 +1,142 @@
+body {
+    margin: 0 !important;
+    background: #eeeeee;
+  }
+  @-webkit-keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  .loader {
+    border: 6px solid #c7c7c7;
+    margin-top: 9rem !important;
+    border-radius: 50%;
+    border-top: 6px solid #131313;
+    width: 4rem;
+    height: 4rem;
+    margin: auto;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  .loader.margin {
+    margin-top: 0 !important;
+  }
+  .header {
+    background: black;
+    margin: 0;
+    color: #d6d6d6;
+    padding: 10px;
+    text-align: center;
+  }
+  .text-center {
+    text-align: center;
+    font-size: 18px;
+  }
+  .container {
+    display: flex;
+    column-gap: 6rem;
+    justify-content: center;
+    /* background: #c8c8c8; */
+    height: 30rem;
+  }
+  .company-name {
+    width: 200px;
+    margin-right: 3rem;
+  }
+  .company-container {
+    width: 18rem;
+  }
+  .persons-list {
+    padding: 0.2rem;
+    margin: 0.6em 0;
+    width: 100%;
+    box-shadow: 1px 1px 7px 2px rgb(0 0 0 / 20%);
+    border-radius: 5px;
+    background: #ededed;
+    cursor: pointer;
+    border-left: 5px solid black;
+    transition: 0.3s;
+  }
+  .person-list.clicked {
+    background: #323232;
+    color: white;
+    border-left: 5px solid #8b8b8b;
+    font-weight: bold;
+    pointer-events: none;
+  }
+  .person-list.clicked:hover {
+    background: #323232;
+  }
+  .persons-list:hover {
+    background: #f7f7f7;
+    box-shadow: 2px 2px 10px 2px rgb(0 0 0 / 30%);
+    transition: 0.3s;
+  }
+  .company-list {
+    padding: 0.5rem 1rem;
+    margin: 0.4em 0;
+    width: auto;
+    background: #dedede;
+    border-radius: 4px;
+  }
+  .company-details.loading {
+    padding: 4.5rem 6.5rem;
+  }
+  .company-details {
+    background: #ededed;
+    padding: 2rem;
+    border-radius: 5px;
+    border-top: 5px solid black !important;
+    /* border: 1px solid gray; */
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    transition: 0.3s;
+  }
+  .company-details:hover {
+    box-shadow: 0 8px 15px 3px rgb(0 0 0 / 20%);
+    transition: 0.3s;
+  }
+  .reset {
+    float: right;
+    cursor: pointer;
+    margin-top: -27px;
+    background: #9b9b9b;
+    margin-right: -26px;
+    cursor: pointer;
+    border-radius: 9px;
+    width: 25px;
+    padding: 2px;
+    height: 25px;
+  }
+  .reset:hover {
+    background-color: black;
+    cursor: pointer;
+    color: white;
+  }
+  .reset-icon {
+    font-size: 1.5rem;
+    position: absolute;
+    font-weight: bold;
+    font-family: cursive;
+    margin-top: -9px !important;
+    margin-left: 5px;
+  }
+  .reset-icon:hover {
+    color: white;
+  }
+  
